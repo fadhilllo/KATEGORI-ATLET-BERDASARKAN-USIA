@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Kategori Atlet Berdasarkan Usia</h2>
+    <script>
+        let nama = prompt("Masukkan Nama Atlet: ");
+        let usia = Number(prompt("Masukkan Usia Atlet: "));
+        let kelompok = "";
+        
+        if (usia >= 6 && usia <= 12) {
+            kelompok = "Junior";
+        } else if (usia >= 13 && usia <= 19) {
+            kelompok = "Remaja";
+        } else if (usia >= 20) {
+            kelompok = "Junior";
+        } else {
+            kelompok = "Usia Belum Memenuhi Syarat";
+        }
+
+        document.write("Nama Atlet: <b>" + nama + "</b><br>");
+        document.write("Usia Atlet: <b>" + usia + " Tahun</b><br>");
+        document.write("Kelompok Latihan: <b>" + kelompok + "</b><br>");
+    </script>
+</body>
+</html>
